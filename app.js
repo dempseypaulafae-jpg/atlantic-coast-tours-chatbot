@@ -5,7 +5,7 @@
   Example: https://atlantic-coast-tours-api.your-name.workers.dev
 */
 const CONFIG = Object.freeze({
-  API_BASE_URL: "https://YOUR-CLOUDFLARE-WORKER.workers.dev",
+  API_BASE_URL: "https://atlantic-coast-tours-api.dempsey-paulafae.workers.dev",
   CHAT_PATH: "/chat",
   REQUEST_TIMEOUT_MS: 30000
 });
