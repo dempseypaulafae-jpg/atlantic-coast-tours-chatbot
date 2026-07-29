@@ -3,26 +3,33 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Atlantic Coast Tours live AI concierge for tour availability, prices and weather guidance.">
+  <meta
+    name="description"
+    content="Atlantic Coast Tours AI customer assistant for live tour availability, prices and weather guidance."
+  >
   <title>Atlantic Coast Tours | Live AI Concierge</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=7">
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet"
+  >
+  <link rel="stylesheet" href="styles.css?v=8">
 </head>
 <body>
-  <div class="site-shell">
-    <header class="topbar">
+  <div class="coastline" aria-hidden="true"></div>
+  <div class="page-shell">
+    <header class="site-header">
       <a class="brand" href="#" aria-label="Atlantic Coast Tours home">
-        <span class="brand-icon" aria-hidden="true">
-          <svg viewBox="0 0 64 64">
-            <path d="M7 38c8-1 13-7 18-17 4 9 10 15 20 15 6 0 11-3 16-8-3 16-14 27-29 27C18 55 9 48 7 38Z"></path>
-            <path d="M8 29c8 0 13-5 18-15 5 9 11 13 19 13 6 0 11-2 16-7-5 11-13 17-23 17-8 0-15-3-20-9-3 1-6 1-10 1Z"></path>
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 64 64" role="img" aria-label="Atlantic wave logo">
+            <path d="M8 39c9-1 13-7 17-16 4 8 10 14 19 14 6 0 11-3 16-8-3 15-13 25-28 25C19 54 10 48 8 39Z"></path>
+            <path d="M8 30c8 0 13-5 18-15 4 8 10 13 18 13 6 0 11-2 16-7-5 10-12 16-22 16-8 0-15-3-20-9-3 1-6 2-10 2Z"></path>
           </svg>
         </span>
         <span class="brand-copy">
           <strong>Atlantic Coast Tours</strong>
-          <small>Live guidance for Ireland's wild west</small>
+          <small>Live planning for Ireland's wild west</small>
         </span>
       </a>
 
@@ -32,127 +39,178 @@
       </div>
     </header>
 
-    <main class="workspace">
-      <section class="story-panel" aria-labelledby="pageTitle">
-        <div class="story-pattern" aria-hidden="true"></div>
-        <div class="story-content">
-          <p class="eyebrow"><span></span> Live AI tour concierge</p>
-          <h1 id="pageTitle">Your west coast,<br><em>planned live.</em></h1>
-          <p class="story-lead">
-            Compare real-time tour availability, current prices and destination weather in one conversation.
-          </p>
+    <main class="main-layout">
+      <section class="hero-panel" aria-labelledby="pageTitle">
+        <div class="live-pill">
+          <span class="pulse" aria-hidden="true"></span>
+          Live tour and weather guidance
+        </div>
 
-          <div class="signal-list" aria-label="Live assistant capabilities">
-            <article>
-              <span class="signal-number">01</span>
-              <div>
-                <strong>See what is available</strong>
-                <p>Live catalogue data from the assigned Google Sheet.</p>
-              </div>
-            </article>
-            <article>
-              <span class="signal-number">02</span>
-              <div>
-                <strong>Check the conditions</strong>
-                <p>Current and forecast weather from Open-Meteo.</p>
-              </div>
-            </article>
-            <article>
-              <span class="signal-number">03</span>
-              <div>
-                <strong>Choose with confidence</strong>
-                <p>Reasoned guidance with unusual values clearly flagged.</p>
-              </div>
-            </article>
+        <h1 id="pageTitle">
+          Find your edge of
+          <span>the Atlantic.</span>
+        </h1>
+
+        <p class="hero-copy">
+          A live AI concierge for west-coast adventures. Compare current tour options,
+          check spaces and prices, then factor in the weather before you choose.
+        </p>
+
+        <div class="journey-strip" aria-label="How the assistant works">
+          <div>
+            <span>01</span>
+            <strong>Explore</strong>
+            <small>Browse live tour options</small>
           </div>
+          <div class="journey-arrow" aria-hidden="true">→</div>
+          <div>
+            <span>02</span>
+            <strong>Check</strong>
+            <small>Compare live conditions</small>
+          </div>
+          <div class="journey-arrow" aria-hidden="true">→</div>
+          <div>
+            <span>03</span>
+            <strong>Choose</strong>
+            <small>Get a reasoned recommendation</small>
+          </div>
+        </div>
 
-          <div class="disclosure-card">
-            <span class="disclosure-mark" aria-hidden="true">AI</span>
+        <div class="trust-card">
+          <div class="trust-icon" aria-hidden="true">AI</div>
+          <div>
+            <h2>Transparent by design</h2>
+            <p>
+              You are chatting with an AI assistant. It uses live external sources,
+              flags unusual values and recommends human confirmation when information looks unreliable.
+            </p>
+          </div>
+        </div>
+
+        <div class="feature-grid" aria-label="Assistant capabilities">
+          <article>
+            <span class="feature-icon" aria-hidden="true">⌁</span>
             <div>
-              <strong>Transparent by design</strong>
-              <p>You are chatting with an AI assistant using live external sources. Confirm important booking details before purchase.</p>
+              <h3>Live catalogue</h3>
+              <p>Current prices, locations and spaces from the assigned Google Sheet.</p>
             </div>
-          </div>
+          </article>
+          <article>
+            <span class="feature-icon" aria-hidden="true">☁</span>
+            <div>
+              <h3>Weather-aware</h3>
+              <p>Live Open-Meteo conditions used in practical tour recommendations.</p>
+            </div>
+          </article>
+          <article>
+            <span class="feature-icon" aria-hidden="true">✓</span>
+            <div>
+              <h3>Honest answers</h3>
+              <p>Implausible values are reported, caveated and never silently corrected.</p>
+            </div>
+          </article>
         </div>
       </section>
 
-      <section class="concierge-panel" aria-labelledby="chatHeading">
-        <div class="chat-card">
-          <div class="chat-header">
-            <div class="assistant-title">
-              <span class="assistant-orb" aria-hidden="true"><i></i></span>
-              <div>
-                <p>Atlantic AI concierge</p>
-                <h2 id="chatHeading">How can I help you explore?</h2>
-              </div>
-            </div>
-            <button class="icon-button" id="clearChatButton" type="button" aria-label="Clear conversation" title="Clear conversation">
-              <svg viewBox="0 0 24 24" aria-hidden="true">
-                <path d="M4 7h16M9 7V4h6v3m-8 0 1 13h8l1-13M10 11v5m4-5v5"></path>
-              </svg>
-            </button>
-          </div>
-
-          <div class="connection-row" aria-label="Live connections">
-            <span><i></i> Gemini</span>
-            <span><i></i> Google Sheet</span>
-            <span><i></i> Open-Meteo</span>
-          </div>
-
-          <div class="chat-log" id="chatLog" role="log" aria-live="polite" aria-relevant="additions" aria-label="Conversation">
-            <div class="message message-assistant welcome-message">
-              <div class="avatar" aria-hidden="true">A</div>
-              <div class="message-content">
-                <p>Hello. Ask me about current tours, prices, available spaces or the weather for a destination.</p>
-              </div>
+      <section class="chat-card" aria-labelledby="chatHeading">
+        <div class="chat-header">
+          <div class="chat-title-group">
+            <span class="assistant-orb" aria-hidden="true"><span></span></span>
+            <div>
+              <p class="chat-kicker">Atlantic AI concierge</p>
+              <h2 id="chatHeading">Where would you like to go?</h2>
             </div>
           </div>
-
-          <div class="quick-start">
-            <p>Popular questions</p>
-            <div class="suggestions" aria-label="Suggested questions">
-              <button type="button" data-question="What tours are available this week?">
-                <span class="quick-icon" aria-hidden="true">↗</span>
-                <span><strong>Tours this week</strong><small>Check live spaces</small></span>
-              </button>
-              <button type="button" data-question="Which tour would suit a rainy day?">
-                <span class="quick-icon" aria-hidden="true">☂</span>
-                <span><strong>Rainy-day ideas</strong><small>Weather-aware options</small></span>
-              </button>
-              <button type="button" data-question="What is the weather like for a west coast tour tomorrow?">
-                <span class="quick-icon" aria-hidden="true">☁</span>
-                <span><strong>Tomorrow's weather</strong><small>Live forecast guidance</small></span>
-              </button>
-            </div>
-          </div>
-
-          <form class="chat-form" id="chatForm">
-            <label class="sr-only" for="messageInput">Ask a question</label>
-            <textarea id="messageInput" name="message" rows="1" maxlength="1000" placeholder="Ask about a tour, price, availability or weather…" autocomplete="off" required></textarea>
-            <button class="send-button" id="sendButton" type="submit" aria-label="Send message">
-              <span>Ask</span>
-              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m4 4 16 8-16 8 3-8-3-8Zm3 8h13"></path></svg>
-            </button>
-          </form>
-
-          <p class="form-note">AI-generated guidance. Do not share personal, payment or health information.</p>
-
-          <details class="sources-panel" id="sourcesPanel">
-            <summary>
-              <span class="source-title"><span class="source-pulse" aria-hidden="true"></span> Live evidence used</span>
-              <span class="source-count" id="sourceCount">0</span>
-            </summary>
-            <div class="sources-content" id="sourcesContent">
-              <p class="empty-state">Source names, retrieval times and request IDs will appear after a live tool is used.</p>
-            </div>
-          </details>
+          <button class="icon-button" id="clearChatButton" type="button" aria-label="Clear conversation" title="Clear conversation">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M4 7h16M9 7V4h6v3m-8 0 1 13h8l1-13M10 11v5m4-5v5"></path>
+            </svg>
+          </button>
         </div>
+
+        <div class="chat-meta" aria-label="Live connections">
+          <span><i></i> Gemini live</span>
+          <span><i></i> Google Sheet live</span>
+          <span><i></i> Open-Meteo live</span>
+        </div>
+
+        <div
+          class="chat-log"
+          id="chatLog"
+          role="log"
+          aria-live="polite"
+          aria-relevant="additions"
+          aria-label="Conversation"
+        >
+          <div class="welcome-card">
+            <div class="avatar" aria-hidden="true">A</div>
+            <div class="welcome-copy">
+              <strong>Welcome to Atlantic Coast Tours</strong>
+              <p>
+                Ask me to compare live tours, check available spaces or use current weather to recommend a suitable experience.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="suggestion-block">
+          <p>Try asking</p>
+          <div class="suggestions" aria-label="Suggested questions">
+            <button type="button" data-question="What tours are available this week?">
+              <span aria-hidden="true">↗</span> Tours this week
+            </button>
+            <button type="button" data-question="Which tour would suit a rainy day?">
+              <span aria-hidden="true">↗</span> Rainy-day ideas
+            </button>
+            <button type="button" data-question="What is the weather like for a west coast tour tomorrow?">
+              <span aria-hidden="true">↗</span> Tomorrow's weather
+            </button>
+          </div>
+        </div>
+
+        <form class="chat-form" id="chatForm">
+          <label class="sr-only" for="messageInput">Ask a question</label>
+          <textarea
+            id="messageInput"
+            name="message"
+            rows="1"
+            maxlength="1000"
+            placeholder="Ask about a tour, price, spaces or destination weather…"
+            autocomplete="off"
+            required
+          ></textarea>
+          <button class="send-button" id="sendButton" type="submit" aria-label="Send message">
+            <span>Ask</span>
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="m4 4 16 8-16 8 3-8-3-8Zm3 8h13"></path>
+            </svg>
+          </button>
+        </form>
+
+        <p class="form-note">
+          AI-generated guidance. Do not share personal, payment or health information.
+        </p>
+
+        <details class="sources-panel" id="sourcesPanel">
+          <summary>
+            <span class="source-summary-title">
+              <span class="source-radar" aria-hidden="true"></span>
+              Live evidence used for this answer
+            </span>
+            <span class="source-count" id="sourceCount">0</span>
+          </summary>
+          <div class="sources-content" id="sourcesContent">
+            <p class="empty-state">
+              Source names, retrieval times and request IDs will appear here after a live tool is used.
+            </p>
+          </div>
+        </details>
       </section>
     </main>
 
     <footer>
-      <span>Atlantic Coast Tours · Customer engagement AI demonstration</span>
-      <span>Google Sheets · Open-Meteo · Gemini</span>
+      <p>Atlantic Coast Tours · Live AI customer assistant demonstration</p>
+      <span>Google Sheets + Open-Meteo + Gemini</span>
     </footer>
   </div>
 
@@ -163,6 +221,6 @@
     </div>
   </template>
 
-  <script src="app.js?v=7" defer></script>
+  <script src="app.js?v=8" defer></script>
 </body>
 </html>
