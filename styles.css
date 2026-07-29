@@ -633,54 +633,22 @@ footer p { margin-bottom: 0; }
   }
 }
 
-/* Compact opening card: separate from normal chat bubbles so it can never stretch */
-.welcome-card {
-  display: flex;
-  align-items: flex-start;
-  gap: 12px;
-  width: min(100%, 520px);
-  margin: 0 0 16px;
+/* Compact and left-align the opening assistant message */
+.welcome-message {
+  align-items: flex-start !important;
 }
 
-.welcome-card .avatar {
-  flex: 0 0 34px;
+.welcome-message .message-content {
+  display: block !important;
+  width: auto !important;
+  height: auto !important;
+  min-height: 0 !important;
+  max-width: 470px !important;
+  padding: 15px 17px !important;
+  text-align: left !important;
 }
 
-.welcome-copy {
-  flex: 0 1 auto;
-  width: auto;
-  max-width: 470px;
-  min-height: 0;
-  padding: 14px 16px;
-  color: var(--ink);
-  background: linear-gradient(135deg, #f4faf8, #eef7f5);
-  border: 1px solid #dfeae8;
-  border-radius: 5px 17px 17px;
-  text-align: left;
-}
-
-.welcome-copy strong {
-  display: block;
-  margin-bottom: 5px;
-  font-size: 0.92rem;
-}
-
-.welcome-copy p {
-  margin: 0;
-  color: var(--ink-soft);
-  font-size: 0.88rem;
-  line-height: 1.55;
-}
-
-/* Keep all ordinary assistant messages compact after the conversation is cleared */
-.message {
-  align-items: flex-start;
-}
-
-.message-content {
-  flex: 0 1 auto;
-  width: auto;
-  height: auto;
-  min-height: 0;
-  text-align: left;
+.welcome-message .message-content p {
+  margin: 0 !important;
+  line-height: 1.55 !important;
 }
