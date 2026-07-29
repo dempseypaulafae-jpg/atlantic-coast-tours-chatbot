@@ -632,3 +632,23 @@ footer p { margin-bottom: 0; }
     animation-iteration-count: 1 !important;
   }
 }
+
+/* Compact and left-align the opening assistant message */
+.welcome-message {
+  align-items: flex-start !important;
+}
+
+.welcome-message .message-content {
+  display: block !important;
+  width: auto !important;
+  height: auto !important;
+  min-height: 0 !important;
+  max-width: 470px !important;
+  padding: 15px 17px !important;
+  text-align: left !important;
+}
+
+.welcome-message .message-content p {
+  margin: 0 !important;
+  line-height: 1.55 !important;
+}
